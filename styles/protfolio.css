@@ -41,6 +41,9 @@ nav {
     padding: 15px 35px;
 
 }
+.btn-primary:hover{
+    background-color: #fd3f0a;
+}
 
 nav>ul {
     display: flex;
@@ -169,7 +172,30 @@ main section{
 /* Footer style */
 footer{
     display: flex;
+    gap: 100px;
     background-color: #FFF8F3;
     margin-top: 100px;
     padding: 130px 200px;
+}
+.footer-column{
+    width: 50%;
+}
+.social-links a{
+    margin-right: 25px;
+}
+.social-links a:hover{
+    box-shadow: 0px 5px 3px 0px black ;
+    transform: scale(1.08);
+    transition: 0.3s;
+    border-radius: 4px;
+}
+.contact input[type="text"],.contact input[type="email"],textarea{
+    display: block;
+    margin-bottom: 25px;
+    padding: 18px 35px;
+    color: #757575;
+    border-radius: 5px;
+    background: #FFF;
+    border: 0;
+    width: 75%;
 }
