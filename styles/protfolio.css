@@ -214,16 +214,37 @@ footer{
     .banner #what-i-do-description{
         padding: 20px;
     }
-    footer, .banner, nav, nav>ul{
+    .banner-content{
+        width: 100%;
+    }
+    .banner-title{
+        width: 100%;
+        font-size: 60px;
+    }
+    footer, .banner, nav{
         padding: 10px;
         flex-direction: column;
+    }
+    nav>ul{
+        padding: 10px;
+        flex-direction: column;
+        margin-bottom: 10px;  
+    }
+    nav>ul>li{
+        padding: 10px;
+        flex-direction: column;
+        margin-bottom: 10px;  
+    }
+    nav>ul>li>.btn-primary{
+        width: 100%;  
     }
     .about{
         padding: 10px;
     }
     .about-info-container{
         flex-direction: column;
-    }.header{
+    }
+    .header{
         background-image: none;
     }
     .banner .profile-pic{
@@ -232,8 +253,16 @@ footer{
     .footer-column{
         width: 100%;
     }
+    .btn-primary{
+        margin-bottom: 10px;
+    }
 }
 
 @media screen and (min-width:576px) and (max-width:960px){
-    
+    footer{
+        padding: 30px;
+    }
+    .btn-primary{
+        margin-bottom: 15px;
+    }
 }
