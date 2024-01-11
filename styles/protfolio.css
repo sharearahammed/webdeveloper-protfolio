@@ -167,7 +167,7 @@ main section{
 .resume-container hr{
     margin: 30px;
 } 
-.doenload-cv{
+.download-cv{
     text-align: center;
     margin-top: 50px;
 }
@@ -200,4 +200,40 @@ footer{
     background: #FFF;
     border: 0;
     width: 75%;
+}
+/* responsive style */
+
+/* mobile devices */
+.hide{
+    display: none;
+}
+@media screen and (max-width:576px) {
+    .skills-container , .resume-container{
+        flex-direction: column;
+    }
+    .banner #what-i-do-description{
+        padding: 20px;
+    }
+    footer, .banner, nav, nav>ul{
+        padding: 10px;
+        flex-direction: column;
+    }
+    .about{
+        padding: 10px;
+    }
+    .about-info-container{
+        flex-direction: column;
+    }.header{
+        background-image: none;
+    }
+    .banner .profile-pic{
+        width: 100%;
+    }
+    .footer-column{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:960px){
+    
 }
